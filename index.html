@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bulb on and off</title>
+</head>
+<body>
+	<script>
+		function light(value)
+		{
+			var pic;
+			if(value==0)
+			{
+				pic="mi.jfif";
+			}
+			else
+			{
+				pic="ni.jfif";
+			}
+			document.getElementById('bulb').src=pic;
+		}
+	</script>
+
+<img id="bulb" src="mi.jfif">
+
+<br>
+<button onclick="light(1)">Turn On</button>
+<button onclick="light(0)">Turn off</button>
+</body>
+</html>
